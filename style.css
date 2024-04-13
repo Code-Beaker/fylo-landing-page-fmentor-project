@@ -106,6 +106,7 @@ img {
 .hero__form-flex {
   display: flex;
   align-items: stretch;
+  justify-content: center;
   gap: 1rem;
   padding: 1rem 0;
 }
@@ -123,9 +124,11 @@ img {
   border-radius: 0.25rem;
   background-color: var(--bright-blue);
   color: white;
+  font-size: 14px;
+  display: block;
   font-weight: var(--weight-bold);
   font-family: var(--font-raleway);
-  padding: 0.75rem calc(4 * 0.75rem);
+  padding: 0.75rem calc(3 * 0.75rem);
   cursor: pointer;
 }
 
@@ -220,6 +223,12 @@ img {
 }
 
 /* get early  */
+
+.access__cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .early-access-section {
   padding: 6rem;
   color: white;
@@ -240,11 +249,13 @@ img {
   font-family: var(--font-raleway);
   border-radius: 0.25rem;
   border: none;
-  min-width: 25rem;
+  /* width: 20rem; */
+  /* max-width: 25rem; */
+  display: block;
 }
 
 .access-btn {
-  display: block;
+  display: inline-block;
   margin: 1rem 0;
   border: none;
   font-weight: var(--weight-bold);
@@ -252,8 +263,9 @@ img {
   color: white;
   font-family: var(--font-raleway);
   border-radius: 0.25rem;
-  padding: 0.75rem calc(4 * 0.75rem);
+  padding: 0.75rem calc(3 * 0.75rem);
   cursor: pointer;
+  max-width: 15rem;
 }
 
 .access-btn:hover {
@@ -261,5 +273,140 @@ img {
 }
 
 .access-form {
-  padding-left: 6rem;
+  /* padding-left: 6rem; */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/* responsive design */
+@media screen and (max-width: 700px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .navbar__flex {
+    gap: 0.5rem;
+  }
+
+  .navbar__logo-img {
+    max-width: 75px;
+  }
+
+  .navbar__link {
+    margin: 0 0.25rem;
+    /* border: 1px solid red; for preview */
+    font-size: 12px;
+    padding: 0.5rem;
+    display: block;
+  }
+
+  .hero__two-cols {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .hero {
+    max-height: fit-content;
+    /* border: 1px solid red; for preview */
+  }
+
+  .hero__text-content {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .hero__heading {
+    font-size: 1.5rem;
+  }
+
+  .hero__form-flex {
+    flex-direction: column;
+  }
+
+  .hero__image {
+    max-width: 20rem;
+    display: block;
+  }
+
+  .section__cols {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .section__text-content {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .testimonials__heading {
+    font-size: 1rem;
+  }
+
+  .testimonials__paragraph {
+    font-size: 12px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+
+  .quotes__icon {
+    text-align: left;
+  }
+
+  .quotes__icon img {
+    display: inline-block;
+  }
+
+  .testimonial__body-text {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .user__img {
+    max-width: 25px;
+  }
+
+  .user__details {
+    text-align: left;
+  }
+
+  .user__name {
+    font-size: 10px;
+  }
+
+  .user__profession {
+    font-size: 10px;
+  }
+
+  .section__image {
+    max-width: 15rem;
+    margin-top: 1.5rem;
+  }
+
+  .access__heading {
+    font-size: 1rem;
+  }
+
+  .access__cols {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .access-form {
+    padding: 1rem;
+  }
+
+  .early-access-section {
+    padding: 3rem;
+  }
+
+  .access__text-content {
+    /* padding: 1rem; */
+    text-align: center;
+    max-width: 100%;
+  }
 }
