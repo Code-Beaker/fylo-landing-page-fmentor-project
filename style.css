@@ -139,6 +139,19 @@ img {
 /* testimonials section */
 .testimonials {
   padding: 6rem;
+  background: var(--light-grayish-blue);
+  position: relative;
+}
+
+.testimonials::before {
+  content: "";
+  background-image: url("images/bg-curve-desktop.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -5%;
+  left: 0;
 }
 
 .testimonials__heading {
@@ -382,6 +395,7 @@ img {
   .hero {
     max-height: fit-content;
     /* border: 1px solid red; for preview */
+    padding-bottom: 5rem;
   }
 
   .hero__text-content {
@@ -405,6 +419,10 @@ img {
   .section__cols {
     grid-template-columns: 1fr;
     justify-content: center;
+  }
+
+  .testimonials::before {
+    background-image: url("images/bg-curve-mobile.svg");
   }
 
   .section__text-content {
