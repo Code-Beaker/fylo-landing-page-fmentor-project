@@ -413,11 +413,11 @@ img {
   }
 
   .testimonials__heading {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .testimonials__paragraph {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .link {
@@ -433,7 +433,7 @@ img {
   }
 
   .testimonial__body-text {
-    font-size: 12px;
+    font-size: 13px;
     text-align: left;
   }
 
@@ -454,7 +454,7 @@ img {
   }
 
   .section__image {
-    max-width: 15rem;
+    max-width: 20rem;
     margin-top: 1.5rem;
   }
 
