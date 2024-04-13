@@ -151,6 +151,7 @@ img {
 .section__cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
 }
 
 .section__image {
@@ -216,4 +217,49 @@ img {
 
 .user__profession {
   font-size: 13px;
+}
+
+/* get early  */
+.early-access-section {
+  padding: 6rem;
+  color: white;
+  background: var(--desaturated-blue);
+}
+
+.access__text-content {
+  max-width: 85%;
+}
+
+.access__heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.access__text-input {
+  padding: 0.75rem 1.5rem;
+  font-family: var(--font-raleway);
+  border-radius: 0.25rem;
+  border: none;
+  min-width: 25rem;
+}
+
+.access-btn {
+  display: block;
+  margin: 1rem 0;
+  border: none;
+  font-weight: var(--weight-bold);
+  background-color: var(--bright-blue);
+  color: white;
+  font-family: var(--font-raleway);
+  border-radius: 0.25rem;
+  padding: 0.75rem calc(4 * 0.75rem);
+  cursor: pointer;
+}
+
+.access-btn:hover {
+  opacity: 0.5;
+}
+
+.access-form {
+  padding-left: 6rem;
 }
