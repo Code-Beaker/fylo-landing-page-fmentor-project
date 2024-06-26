@@ -1,0 +1,14 @@
+{
+  "name": "fylo-landing-page",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "validator": "^13.12.0"
+  }
+}
